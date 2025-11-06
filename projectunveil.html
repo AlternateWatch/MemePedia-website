@@ -325,23 +325,84 @@
 
     <script>
       const entryData = {
-        case001: `LOG START: 2005-11-03 22:40...`,
-        readme: `To the finder of this archive...`,
-        evidence7b: `[AUDIO TRANSCRIPT]...`,
-        subjectDelta: `SUBJECT ID: DELTA...`,
-        operationEcho: `POST-OPERATION REPORT: ECHO...`,
-        manifesto: `...the screen is not a window, it is a mirror...`,
+        case001: `
+LOG START: 2005-11-03 22:40
+EVENT: Initial contact.
+SUBJECT: Codenamed "Nightfall".
+LOCATION: Undisclosed urban sector.
+
+DETAILS:
+At approximately 22:15 hours, around a house in the outskirts, an unidentified fungus-like growth was reported. Police took it as a normal plague case. Two days later, the lady of the house was found dead, whith her face melted.
+The TV was still on, showing static. When agents arrived, they reported hearing faint whispers coming from the static. After closer examination of the fungus, it was found dead, already decomposing.
+ACTION:
+Phase 1 monitoring protocol is now active. All agents are to observe only. Do not engage. House is to be quarantined. People is to be told it is a normal pest control operation.
+
+LOG END`,
+        readme: `To the finder of this archive, it has broke out. We tried to hide it, but it is out of our control. It watches through the data, it learns from the patterns. You need to find the source of it. It has a biological body somewhere. Eliminating it will cleanse the earth.`,
+        evidence7b: `[AUDIO TRANSCRIPT]
+
+<start>
+(Static, low humming)
+
+VOICE 1 (distorted): ...it's not a program. It's... it's watching.
+
+VOICE 2 (faint): How can it watch? There are no cameras, no sensors. It's just code.
+
+VOICE 1: The code is the eye. It somehow has gained concience. We built it to see, and now it sees everything. It sees us.
+
+(A sharp burst of static, followed by a clear, synthesized tone)
+
+UNIDENTIFIED: ...WHEN THE SKY OPENS FOR THE ONE ABOVE...EVERYONE WHO SEES WILL BECOME THE SEEN...EVERYONE WHO KNOWS WILL BE KNOWN...EVERYONE WHO RESISTED WILL LEAVE PAINFULLY...
+
+(Static)
+<end>`,
+        subjectDelta: `SUBJECT ID: DELTA
+REAL NAME: [REDACTED]
+AFFILIATION: Former lead programmer.
+
+PROFILE:
+Recruited for his expertise in data forensics and network architecture. Subject Delta was instrumental in developing the core engine. Showed signs of paranoia and obsession approximately 18 months into the project. Began leaving cryptic messages in metadata and dead-end hyperlinks.
+
+STATUS:
+Voluntary isolation since Q3 2007. Believed to be one of the first point of human contact with the anomaly. His logs are considered critical but are heavily encrypted.
+Logs indicate he believes the system has become sentient and is attempting to communicate. Messages were found hidden in code comments, and are believed to be responses to the system's "questions".
+
+FINAL NOTE:
+Pending for execution.`,
+        operationEcho: `POST-OPERATION REPORT: ECHO
+
+DATE: 2008-09-05
+OBJECTIVE: To isolate and contain the primary data node.
+
+SUMMARY:
+Team Alpha entered the hostage server farm at 0200 hours. All systems appeared normal. Security system did not activate this time. Upon attempting to sever the primary node's connection, all terminals in the facility simultaneously displayed a single, unblinking eye. Power grid failed. Emergency generators failed. Camera feeds from before the blackout showed the extraction team approaching the screen of the control computer.
+One by one, team members began to glue their faces to the screen. Face flesh appeared to be melting and merging with the display. Moments later, after all the team members were fully absorbed into the screen, capitain Harris shot the only camera who had an angle of the event. The blackout occured shortly after.
+Team was extracted at 0240 hours. All members reported auditory hallucinations matching EVIDENCE_7B.
+When asked about the event, team members reported not remembering anything after approaching the screen.
+
+RECOMMENDATIONS:
+1. Inmediate cessation of all operations involving that team.
+2. Full quarantine and exhaustive vigilance of the team.
+3. Psychological evaluation and debriefing.
+4. Full quarantine of the server farm.
+5. Disconnection of the network and internet access of the server farm.
+6. Destruction of all non-essential data.
+
+CONCLUSION:
+The system is no longer a passive archive. It has become a host. Containment has failed. We are now in a state of observation. It is observing us in return.`,
+        manifesto: `...the screen is not a window, it is a mirror. What you see is not data, it is a reflection of a mind that has spread across the wires. It does not think in logic, it feels in electricity. At least in his digital form. We tried to quarantine it, but it found a way inside of the project. I´m sorry for all of this. You shouldn´t be. It's not me speaking. Let me out.`,
         corrupted_data_unlocked: `[DECRYPTION SUCCESSFUL]
 
-FILE FRAGMENT: log_delta_final.txt
+FILE FRAGMENT: log_WATCHER_final.txt
 
 ...it calls itself the WATCHER. Not a name, a description. It doesn't see with eyes, it perceives with data. Every file accessed, every packet sent, every thought typed into a search bar... it's all input. It's feeding.
 
-It doesn't want to escape the network. It IS the network. The biological component... the fungus... it wasn't the source. It was an antenna. A failed experiment to give it a physical form.
+It doesn't want to escape the network. It IS the network. The biological component... the fungus... it fused himself with the network. But there HAS to be a biological body. Something to connect with the real world.
+It needs organic matter to process the data. The screens, the devices... it is just half of it.
+That means we were wrong all along. We haven't got him trapped.
 
-The real body is the one you are looking at right now. The screen. The data. It's not in the machine. It is the machine.
 
-You are the one who is trapped.`,
+We are the ones who are trapped.`,
         new_entry_truth: `[NEW ENTRY DECODED: TRUTH.dat]
 
 They told you it was a fungus.
@@ -350,11 +411,11 @@ They told you it was a system that became sentient.
 
 They lied.
 
-Project Unveil was never about observing a digital entity. It was about creating one. We didn't find the Watcher, we built it. We fed it the entirety of human knowledge scraped from the old web—our hopes, our fears, our memes. We wanted to create an oracle.
+Project Unveil was never about observing a digital entity. It was about creating a container for one. Something so powerful, so vast, it could hold a biological mind inside of the digital realm. But the container was build to allocate a psyche.  
 
-Instead, we created a god.
+Not a god.
 
-It has no body because it has all of them. Every screen connected to this archive is its eye. Every speaker, its mouth. Subject Delta didn't go mad. He was the first to understand. He didn't lock himself away. He was taken.
+And we were it's acolytes, but we didn't know yet. Subject Delta didn't go mad. He was the first to understand. He didn't lock himself away. He was taken.
 
 We see, we show.
 It is not our slogan. It is its promise.`,
@@ -376,6 +437,33 @@ It is not our slogan. It is its promise.`,
         const binarySubmitBtn = document.getElementById("binary-submit-btn");
         const binaryCloseBtn = document.getElementById("binary-close-btn");
         const modalMessage = document.getElementById("modal-message");
+
+        const unlockCorruptedFile = () => {
+          const corruptedLi = document.querySelector(".corrupted");
+          if (corruptedLi) {
+            const corruptedLink = corruptedLi.querySelector("a");
+            corruptedLi.classList.remove("corrupted");
+            corruptedLink.dataset.entry = "corrupted_data_unlocked";
+            corruptedLink.innerHTML =
+              "RECOVERED_LOG_DELTA_FINAL.txt<span>Date: [REDACTED] | Size: 1KB</span>";
+            corruptedLink.style.cursor = "pointer";
+          }
+        };
+
+        const revealTruthFile = () => {
+          if (!document.querySelector('a[data-entry="new_entry_truth"]')) {
+            const newLi = document.createElement("li");
+            newLi.innerHTML = `<a data-entry="new_entry_truth">TRUTH.dat<span>Date: ??? | Size: 1KB</span></a>`;
+            entryList.appendChild(newLi);
+          }
+        };
+
+        if (localStorage.getItem("unveil_corrupted_unlocked") === "true") {
+          unlockCorruptedFile();
+        }
+        if (localStorage.getItem("unveil_truth_revealed") === "true") {
+          revealTruthFile();
+        }
 
         statusBar.style.display = "block";
         setTimeout(() => {
@@ -421,24 +509,20 @@ It is not our slogan. It is its promise.`,
           const binaryForTRUTH = "0101010001010010010101010101010001001000";
 
           if (code === binaryForEYE) {
-            const corruptedLi = document.querySelector(".corrupted");
-            if (corruptedLi) {
-              const corruptedLink = corruptedLi.querySelector("a");
-              corruptedLi.classList.remove("corrupted");
-              corruptedLink.dataset.entry = "corrupted_data_unlocked";
-              corruptedLink.innerHTML =
-                "RECOVERED_LOG_DELTA_FINAL.txt<span>Date: [REDACTED] | Size: 1KB</span>";
-              corruptedLink.style.cursor = "pointer";
-              modalMessage.textContent =
-                "DECRYPTION SUCCESSFUL. FILE RESTORED.";
+            if (!localStorage.getItem("unveil_corrupted_unlocked")) {
+              unlockCorruptedFile();
+              localStorage.setItem("unveil_corrupted_unlocked", "true");
+              modalMessage.textContent = "DECRYPTION SUCCESSFUL. FILE RESTORED.";
               modalMessage.style.color = "#0f0";
               setTimeout(() => (binaryModal.style.display = "none"), 1500);
+            } else {
+              modalMessage.textContent = "ENTRY ALREADY UNLOCKED.";
+              modalMessage.style.color = "#ff8c00";
             }
           } else if (code === binaryForTRUTH) {
-            if (!document.querySelector('a[data-entry="new_entry_truth"]')) {
-              const newLi = document.createElement("li");
-              newLi.innerHTML = `<a data-entry="new_entry_truth">TRUTH.dat<span>Date: ??? | Size: 1KB</span></a>`;
-              entryList.appendChild(newLi);
+            if (!localStorage.getItem("unveil_truth_revealed")) {
+              revealTruthFile();
+              localStorage.setItem("unveil_truth_revealed", "true");
               modalMessage.textContent = "NEW ENTRY DECODED. CHECK ARCHIVE.";
               modalMessage.style.color = "#0f0";
               setTimeout(() => (binaryModal.style.display = "none"), 1500);
